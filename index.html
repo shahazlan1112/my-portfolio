@@ -116,7 +116,7 @@
             <h2>My Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                    <div class="project-img" style="background: linear-gradient(135deg, #5B8CFF, #3a6fd6);">
                         <span class="project-num">01</span>
                     </div>
                     <div class="project-info">
@@ -126,7 +126,7 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                    <div class="project-img" style="background: linear-gradient(135deg, #FF6B5B, #e05545);">
                         <span class="project-num">02</span>
                     </div>
                     <div class="project-info">
@@ -136,7 +136,7 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                    <div class="project-img" style="background: linear-gradient(135deg, #5B8CFF, #FF6B5B);">
                         <span class="project-num">03</span>
                     </div>
                     <div class="project-info">
@@ -146,7 +146,7 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+                    <div class="project-img" style="background: linear-gradient(135deg, #3a6fd6, #9A9AA5);">
                         <span class="project-num">04</span>
                     </div>
                     <div class="project-info">
@@ -162,37 +162,47 @@
     <section id="contact">
         <div class="container">
             <h2>Get In Touch</h2>
-            <p class="contact-intro">Have a project idea or just want to say hi? Feel free to reach out!</p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-icon">&#9993;</span>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:shahazlan11.12@gmail.com">shahazlan11.12@gmail.com</a>
-                        </div>
+            <p class="contact-intro">Have a project idea or just want to say hi? Send me a message!</p>
+            <div class="contact-card">
+                <div class="contact-card-header">
+                    <div class="contact-card-info">
+                        <span>&#9993;</span>
+                        <a href="mailto:shahazlan11.12@gmail.com">shahazlan11.12@gmail.com</a>
                     </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">&#128205;</span>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Pakistan</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">&#128337;</span>
-                        <div>
-                            <h4>Availability</h4>
-                            <p>Open to opportunities</p>
-                        </div>
+                    <div class="contact-card-info">
+                        <span>&#128205;</span>
+                        <span>Pakistan</span>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea rows="4" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+
+                <form id="contactForm">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        <span class="error-msg">Please enter your name</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        <span class="error-msg">Please enter a valid email</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        <span class="error-msg">Please enter your message</span>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading">Sending...</span>
+                        <span class="btn-icon">&#10148;</span>
+                    </button>
                 </form>
+
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">&#10003;</div>
+                    <h3>Message Sent Successfully!</h3>
+                    <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -213,24 +223,22 @@
     <a href="#" class="back-to-top" title="Back to top">&#8593;</a>
 
     <script>
-        // Hamburger menu toggle
+        // ─── Hamburger ───
         document.querySelector('.hamburger').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
         });
-
-        // Close menu on link click (mobile)
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 document.querySelector('.nav-links').classList.remove('active');
             });
         });
 
-        // Back to top visibility
+        // ─── Back to top ───
         window.addEventListener('scroll', () => {
             document.body.classList.toggle('scrolled', window.scrollY > 400);
         });
 
-        // Scroll reveal animations
+        // ─── Scroll reveal ───
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -238,10 +246,102 @@
                 }
             });
         }, { threshold: 0.15 });
-
-        document.querySelectorAll('section, .project-card, .skill-card').forEach(el => {
+        document.querySelectorAll('section, .project-card').forEach(el => {
             el.classList.add('fade-in');
             observer.observe(el);
+        });
+
+        // ─── Remove entrance animation after it finishes so 3D tilt works ───
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('animationend', function() {
+                this.style.animation = 'none';
+            });
+        });
+
+        // ─── Cinematic 3D tilt on skill cards ───
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('mousemove', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                this.style.setProperty('--mx', x + '%');
+                this.style.setProperty('--my', y + '%');
+
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const deltaX = (e.clientX - centerX) / (rect.width / 2);
+                const deltaY = (e.clientY - centerY) / (rect.height / 2);
+                const rotateX = deltaY * -12;
+                const rotateY = deltaX * 12;
+                this.style.setProperty('--rx', rotateX + 'deg');
+                this.style.setProperty('--ry', rotateY + 'deg');
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.setProperty('--rx', '0deg');
+                this.style.setProperty('--ry', '0deg');
+                this.style.setProperty('--mx', '50%');
+                this.style.setProperty('--my', '50%');
+            });
+        });
+
+        // ─── Contact Form (Formspree) ───
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('successMessage');
+
+        function validateEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // Reset errors
+            document.querySelectorAll('.input-group').forEach(g => g.classList.remove('error'));
+
+            // Validate
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            let valid = true;
+
+            if (!name) {
+                document.getElementById('name').closest('.input-group').classList.add('error');
+                valid = false;
+            }
+            if (!email || !validateEmail(email)) {
+                document.getElementById('email').closest('.input-group').classList.add('error');
+                valid = false;
+            }
+            if (!message) {
+                document.getElementById('message').closest('.input-group').classList.add('error');
+                valid = false;
+            }
+
+            if (!valid) return;
+
+            // Submit via Formspree
+            const btn = form.querySelector('.btn-submit');
+            btn.classList.add('loading');
+
+            try {
+                const res = await fetch('https://formspree.io/f/your-form-id', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, message })
+                });
+
+                if (res.ok) {
+                    form.classList.add('hidden');
+                    successMsg.classList.add('show');
+                } else {
+                    alert('Something went wrong. Please try again.');
+                }
+            } catch {
+                alert('Network error. Please check your connection.');
+            } finally {
+                btn.classList.remove('loading');
+            }
         });
     </script>
 
