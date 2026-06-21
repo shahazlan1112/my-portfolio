@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Azlan Shah — Web Developer, Designer & AI Enthusiast. Explore my portfolio, projects, and skills.">
+    <meta name="keywords" content="Azlan Shah, portfolio, web developer, designer, AI, Pakistan">
+    <meta name="author" content="Azlan Shah">
+    <meta property="og:title" content="Azlan Shah | Portfolio">
+    <meta property="og:description" content="Web Developer, Designer & AI Enthusiast">
+    <meta property="og:url" content="https://shahazlan1112.github.io/my-portfolio/">
     <title>Azlan Shah | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
 </head>
 <body>
+    <canvas id="neuralBG"></canvas>
+    <div class="cursor-glow"></div>
 
     <header>
         <nav>
@@ -19,6 +28,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#github">GitHub</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">&#9776;</div>
@@ -26,20 +36,36 @@
     </header>
 
     <section class="hero">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="float-badge" style="--delay:0s;--accent:#61DAFB"><i class="fab fa-react"></i> React</div>
+        <div class="float-badge" style="--delay:-10s;--accent:#F7DF1E"><i class="fab fa-js"></i> JS</div>
+        <div class="float-badge" style="--delay:-20s;--accent:#9B59B6"><i class="fas fa-brain"></i> AI</div>
+        <div class="float-badge" style="--delay:-30s;--accent:#339933"><i class="fab fa-node-js"></i> Node</div>
+        <div class="float-badge" style="--delay:-40s;--accent:#3776AB"><i class="fab fa-python"></i> Python</div>
+        <div class="float-badge" style="--delay:-50s;--accent:#FF6B9D"><i class="fas fa-pencil-ruler"></i> Design</div>
+        <div class="float-badge" style="--delay:-60s;--accent:#E44D26"><i class="fab fa-html5"></i> HTML</div>
+        <div class="float-badge" style="--delay:-70s;--accent:#264DE4"><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="float-badge" style="--delay:-80s;--accent:#3178C6"><i class="fas fa-terminal"></i> TypeScript</div>
+        <div class="float-badge" style="--delay:-90s;--accent:#F05032"><i class="fab fa-git-alt"></i> Git</div>
+        <div class="orbit-ring" style="width:800px;height:800px"></div>
         <div class="hero-content">
             <img src="image.jpeg" alt="Azlan Shah profile photo" class="profile-img">
-            <p class="welcome-tag">&#10024; Welcome to my Portfolio</p>
+            <p class="welcome-tag"><i class="fas fa-star"></i> Welcome to my Portfolio</p>
+            <div class="focus-badge"><i class="fas fa-code"></i> Currently learning JavaScript & AI</div>
             <h1>I'm <span class="highlight">Azlan Shah</span></h1>
-            <p class="tagline">Web Developer | Designer | AI Enthusiast | Student</p>
+            <p class="tagline"><span class="typed-text"></span><span class="cursor">|</span></p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="mailto:shahazlan11.12@gmail.com" class="btn btn-secondary">Contact Me</a>
             </div>
             <div class="social-links">
-                <a href="#" class="social-icon" title="GitHub">&#120143;</a>
-                <a href="#" class="social-icon" title="LinkedIn">&#120131;</a>
-                <a href="#" class="social-icon" title="Twitter / X">&#120157;</a>
-                <a href="mailto:shahazlan11.12@gmail.com" class="social-icon" title="Email">&#9993;</a>
+                <a href="https://github.com/shahazlan1112" class="social-icon" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/shahazlan1112" class="social-icon" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/shahazlan1112" class="social-icon" title="Twitter / X" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/theonlyazlan_shah" class="social-icon" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:shahazlan11.12@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
@@ -49,13 +75,13 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>This is my first time learning web development and this is my first HTML portfolio. I'm passionate about designing clean interfaces, writing code, and exploring artificial intelligence.</p>
-                    <p>I'm constantly learning and pushing myself to create meaningful digital experiences. When I'm not coding, you'll find me exploring new design trends or working on exciting new projects.</p>
+                    <p>I'm a passionate web developer and designer from Pakistan, currently learning and building my way into the tech world. I love creating clean, modern interfaces and exploring how AI can shape the future of the web.</p>
+                    <p>This portfolio is my first ever web project — built from scratch with HTML, CSS, and JavaScript. I'm constantly pushing myself to learn new technologies and turn ideas into reality. When I'm not coding, I'm exploring design trends, working on creative projects, or diving into AI & machine learning.</p>
                 </div>
                 <div class="about-stats">
-                    <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
-                    <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Skills</span></div>
-                    <div class="stat"><span class="stat-num">1</span><span class="stat-label">Year Learning</span></div>
+                    <div class="stat"><span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span><span class="stat-label">Projects</span></div>
+                    <div class="stat"><span class="stat-num" data-target="7">0</span><span class="stat-plus">+</span><span class="stat-label">Skills</span></div>
+                    <div class="stat"><span class="stat-num" data-target="1">0</span><span class="stat-label">Year Learning</span></div>
                 </div>
             </div>
         </div>
@@ -66,43 +92,43 @@
             <h2>My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">&#127912;</div>
+                    <div class="skill-icon"><i class="fas fa-palette"></i></div>
                     <h4>Graphic Design</h4>
                     <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
                     <span class="skill-level">Advanced</span>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">&#128083;</div>
+                    <div class="skill-icon"><i class="fas fa-eye"></i></div>
                     <h4>Product Design</h4>
                     <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
                     <span class="skill-level">Intermediate</span>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">&#128187;</div>
+                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
                     <h4>HTML</h4>
                     <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
                     <span class="skill-level">Advanced</span>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">&#127912;</div>
+                    <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
                     <h4>CSS</h4>
                     <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
                     <span class="skill-level">Intermediate</span>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">&#128736;</div>
+                    <div class="skill-icon"><i class="fas fa-cogs"></i></div>
                     <h4>JavaScript</h4>
                     <div class="skill-bar"><div class="skill-fill" style="width: 40%"></div></div>
                     <span class="skill-level">Learning</span>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">&#128293;</div>
+                    <div class="skill-icon"><i class="fas fa-fire"></i></div>
                     <h4>Python</h4>
                     <div class="skill-bar"><div class="skill-fill" style="width: 35%"></div></div>
                     <span class="skill-level">Learning</span>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">&#129302;</div>
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
                     <h4>AI & Machine Learning</h4>
                     <div class="skill-bar"><div class="skill-fill" style="width: 30%"></div></div>
                     <span class="skill-level">Learning</span>
@@ -117,44 +143,86 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img" style="background: linear-gradient(135deg, #5B8CFF, #3a6fd6);">
+                        <div class="project-pattern"></div>
                         <span class="project-num">01</span>
                     </div>
                     <div class="project-info">
                         <h3>UI/UX Design</h3>
                         <p>Designed interfaces for several websites and apps with modern design principles.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/shahazlan1112" class="project-link code" target="_blank"><i class="fab fa-github"></i> View Work</a>
+                        </div>
                         <span class="project-tag">Design</span>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img" style="background: linear-gradient(135deg, #FF6B5B, #e05545);">
+                        <div class="project-pattern"></div>
                         <span class="project-num">02</span>
                     </div>
                     <div class="project-info">
                         <h3>Branding</h3>
                         <p>Designed multiple logos and branding materials for various clients and projects.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/shahazlan1112" class="project-link code" target="_blank"><i class="fab fa-github"></i> View Work</a>
+                        </div>
                         <span class="project-tag">Branding</span>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img" style="background: linear-gradient(135deg, #5B8CFF, #FF6B5B);">
+                        <div class="project-pattern"></div>
                         <span class="project-num">03</span>
                     </div>
                     <div class="project-info">
                         <h3>Portfolio Website</h3>
-                        <p>Building my own portfolio website from scratch using HTML and CSS.</p>
+                        <p>My personal portfolio built from scratch with HTML, CSS, and JavaScript.</p>
+                        <div class="project-links">
+                            <a href="https://shahazlan1112.github.io/my-portfolio/" class="project-link live" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/shahazlan1112/my-portfolio" class="project-link code" target="_blank"><i class="fab fa-github"></i> Source</a>
+                        </div>
                         <span class="project-tag">Web Dev</span>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card ai-card">
                     <div class="project-img" style="background: linear-gradient(135deg, #3a6fd6, #9A9AA5);">
+                        <div class="project-pattern"></div>
+                        <div class="neural-overlay"></div>
                         <span class="project-num">04</span>
                     </div>
                     <div class="project-info">
-                        <h3>AI Exploration</h3>
-                        <p>Exploring artificial intelligence and machine learning concepts and projects.</p>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Exploring neural networks, machine learning models, and AI concepts. Building intelligent systems from scratch.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/shahazlan1112" class="project-link code" target="_blank"><i class="fab fa-github"></i> View Work</a>
+                        </div>
                         <span class="project-tag">AI</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="github">
+        <div class="container">
+            <h2>GitHub</h2>
+            <p class="github-intro">Check out my repositories and open-source work.</p>
+            <div class="github-card">
+                <div class="github-profile">
+                    <img src="https://avatars.githubusercontent.com/shahazlan1112" alt="GitHub avatar" class="github-avatar">
+                    <div class="github-info">
+                        <h3>shahazlan1112</h3>
+                        <p>Web Developer & Designer</p>
+                        <div class="github-stats">
+                            <span><i class="fas fa-code-branch"></i> Repos</span>
+                            <span><i class="fas fa-star"></i> Stars</span>
+                            <span><i class="fas fa-users"></i> Followers</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/shahazlan1112" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-github"></i> View My GitHub
+                </a>
             </div>
         </div>
     </section>
@@ -166,11 +234,11 @@
             <div class="contact-card">
                 <div class="contact-card-header">
                     <div class="contact-card-info">
-                        <span>&#9993;</span>
+                        <i class="fas fa-envelope"></i>
                         <a href="mailto:shahazlan11.12@gmail.com">shahazlan11.12@gmail.com</a>
                     </div>
                     <div class="contact-card-info">
-                        <span>&#128205;</span>
+                        <i class="fas fa-location-dot"></i>
                         <span>Pakistan</span>
                     </div>
                 </div>
@@ -194,12 +262,12 @@
                     <button type="submit" class="btn-submit">
                         <span class="btn-text">Send Message</span>
                         <span class="btn-loading">Sending...</span>
-                        <span class="btn-icon">&#10148;</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
                     </button>
                 </form>
 
                 <div class="success-message" id="successMessage">
-                    <div class="success-icon">&#10003;</div>
+                    <div class="success-icon"><i class="fas fa-check"></i></div>
                     <h3>Message Sent Successfully!</h3>
                     <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
                 </div>
@@ -211,18 +279,112 @@
         <div class="footer-content">
             <div class="footer-logo">&lt;AS /&gt;</div>
             <div class="footer-social">
-                <a href="#" class="social-icon" title="GitHub">&#120143;</a>
-                <a href="#" class="social-icon" title="LinkedIn">&#120131;</a>
-                <a href="#" class="social-icon" title="Twitter / X">&#120157;</a>
-                <a href="mailto:shahazlan11.12@gmail.com" class="social-icon" title="Email">&#9993;</a>
+                <a href="https://github.com/shahazlan1112" class="social-icon" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/shahazlan1112" class="social-icon" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/shahazlan1112" class="social-icon" title="Twitter / X" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/theonlyazlan_shah" class="social-icon" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:shahazlan11.12@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
             <p>&copy; 2026 Azlan Shah. All rights reserved.</p>
         </div>
     </footer>
 
-    <a href="#" class="back-to-top" title="Back to top">&#8593;</a>
+    <a href="#" class="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></a>
 
     <script>
+        // ─── Cursor glow ───
+        const glow = document.querySelector('.cursor-glow');
+        document.addEventListener('mousemove', e => {
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+        });
+        document.addEventListener('mouseleave', () => {
+            glow.style.opacity = '0';
+        });
+        document.addEventListener('mouseenter', () => {
+            glow.style.opacity = '1';
+        });
+
+        // ─── Stat counter animation ───
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-num');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = Math.ceil(target / 40);
+                let current = 0;
+                const update = () => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        return;
+                    }
+                    counter.textContent = current;
+                    requestAnimationFrame(update);
+                };
+                update();
+            });
+        }
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        const statsSection = document.querySelector('.about-stats');
+        if (statsSection) statsObserver.observe(statsSection);
+
+        // ─── Typing effect ───
+        const words = ['Web Developer', 'Designer', 'AI Enthusiast', 'Student'];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typedEl = document.querySelector('.typed-text');
+        const typeSpeed = 100;
+        const deleteSpeed = 60;
+        const pauseTime = 2000;
+
+        function typeEffect() {
+            const current = words[wordIndex];
+            if (isDeleting) {
+                typedEl.textContent = current.substring(0, charIndex--);
+                if (charIndex < 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                    setTimeout(typeEffect, 300);
+                    return;
+                }
+                setTimeout(typeEffect, deleteSpeed);
+            } else {
+                typedEl.textContent = current.substring(0, charIndex++);
+                if (charIndex > current.length) {
+                    isDeleting = true;
+                    setTimeout(typeEffect, pauseTime);
+                    return;
+                }
+                setTimeout(typeEffect, typeSpeed);
+            }
+        }
+        typeEffect();
+
+        // ─── Active nav link on scroll ───
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        function updateActiveNav() {
+            let current = '';
+            sections.forEach(s => {
+                const top = s.offsetTop - 150;
+                if (window.scrollY >= top) current = s.getAttribute('id');
+            });
+            navLinks.forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+            });
+        }
+        window.addEventListener('scroll', updateActiveNav);
+        updateActiveNav();
+
         // ─── Hamburger ───
         document.querySelector('.hamburger').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
@@ -285,6 +447,62 @@
             });
         });
 
+        // ─── 3D Tilt on project cards ───
+        const projectGrid = document.querySelector('.projects-grid');
+        if (projectGrid) {
+            projectGrid.style.perspective = '1200px';
+        }
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.style.transformStyle = 'preserve-3d';
+            card.addEventListener('mousemove', function(e) {
+                const rect = this.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const deltaX = (e.clientX - centerX) / (rect.width / 2);
+                const deltaY = (e.clientY - centerY) / (rect.height / 2);
+                const rotateX = deltaY * -8;
+                const rotateY = deltaX * 8;
+                this.style.setProperty('--rx', rotateX + 'deg');
+                this.style.setProperty('--ry', rotateY + 'deg');
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.setProperty('--rx', '0deg');
+                this.style.setProperty('--ry', '0deg');
+            });
+        });
+
+        // ─── Magnetic buttons ───
+        document.querySelectorAll('.btn, .social-icon').forEach(btn => {
+            btn.addEventListener('mousemove', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                const strength = this.classList.contains('social-icon') ? 6 : 10;
+                this.style.setProperty('--mx', (x / strength) + 'px');
+                this.style.setProperty('--my', (y / strength) + 'px');
+            });
+            btn.addEventListener('mouseleave', function() {
+                this.style.setProperty('--mx', '0px');
+                this.style.setProperty('--my', '0px');
+            });
+        });
+
+        // ─── 3D Parallax profile image ───
+        const hero = document.querySelector('.hero');
+        const profileImg = document.querySelector('.profile-img');
+        if (hero && profileImg) {
+            hero.addEventListener('mousemove', function(e) {
+                const x = (e.clientX / window.innerWidth - 0.5) * 20;
+                const y = (e.clientY / window.innerHeight - 0.5) * 20;
+                profileImg.style.setProperty('--px', x + 'px');
+                profileImg.style.setProperty('--py', y + 'px');
+            });
+            hero.addEventListener('mouseleave', function() {
+                profileImg.style.setProperty('--px', '0px');
+                profileImg.style.setProperty('--py', '0px');
+            });
+        }
+
         // ─── Contact Form (Formspree) ───
         const form = document.getElementById('contactForm');
         const successMsg = document.getElementById('successMessage');
@@ -296,10 +514,8 @@
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
 
-            // Reset errors
             document.querySelectorAll('.input-group').forEach(g => g.classList.remove('error'));
 
-            // Validate
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const message = document.getElementById('message').value.trim();
@@ -320,12 +536,11 @@
 
             if (!valid) return;
 
-            // Submit via Formspree
             const btn = form.querySelector('.btn-submit');
             btn.classList.add('loading');
 
             try {
-                const res = await fetch('https://formspree.io/f/your-form-id', {
+                const res = await fetch('https://formspree.io/f/xqapvrwv', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ name, email, message })
@@ -343,6 +558,335 @@
                 btn.classList.remove('loading');
             }
         });
+
+        // ─── Tech Badge Explosion System ───
+        let currentPopup = null;
+        let popupTimeout = null;
+        let popupLocked = false;
+        function closePopup() {
+            if (popupTimeout) { clearTimeout(popupTimeout); popupTimeout = null; }
+            if (currentPopup) {
+                currentPopup.classList.remove('show');
+                const p = currentPopup;
+                setTimeout(() => { if (p.parentNode) p.parentNode.removeChild(p); }, 400);
+                currentPopup = null;
+                popupLocked = false;
+            }
+        }
+
+        const badgeColors = {
+            React: ['#61DAFB','#00D8FF','#53C1DE'],
+            Node: ['#339933','#68A063','#8CC84B'],
+            HTML: ['#E44D26','#F16529','#FF6B35'],
+            CSS: ['#264DE4','#2965F1','#00D4FF'],
+            JS: ['#F7DF1E','#FFD700','#FFA500'],
+            Python: ['#3776AB','#FFD43B','#4B8BBE'],
+            AI: ['#9B59B6','#8E44AD','#00D2FF','#FF6B9D'],
+            Design: ['#FF6B9D','#C084FC','#34D399','#FBBF24'],
+            TypeScript: ['#3178C6','#235A97','#5BA3E6'],
+            Git: ['#F05032','#D93F21','#FF6B4A']
+        };
+        const badgeSymbols = { React:'⚛', Node:'⬢', HTML:'‹›', CSS:'{ }', JS:'{ }', Python:'<>', AI:'✦', Design:'✦', TypeScript:'TS', Git:'<>' };
+        const techInfo = {
+            React: { icon: '⚛️', title: 'My React Work', desc: 'I build responsive, component-driven UIs with React — hooks, state management, and reusable components. I create interactive dashboards, portfolio sites, and dynamic web apps with clean, modular code.', fact: 'I focus on writing clean, reusable React components that scale.' },
+            Node: { icon: '🟢', title: 'My Node.js Work', desc: 'I build REST APIs, real-time features, and full-stack applications with Node.js. From authentication systems to database integration, I handle server-side logic and backend architecture.', fact: 'I use Node.js to connect frontend apps with powerful backend services.' },
+            HTML: { icon: '🌐', title: 'My HTML Work', desc: 'I write semantic, accessible HTML5 that forms the backbone of every project. Forms, multimedia, structured content — I ensure everything is well-organized and SEO-friendly.', fact: 'Every project I build starts with clean, meaningful HTML structure.' },
+            CSS: { icon: '🎨', title: 'My CSS Work', desc: 'I craft modern, dark-themed UIs with CSS — glassmorphism, gradients, flexbox, grid, custom properties, and smooth animations. I build responsive layouts that look premium on any device.', fact: 'I love creating polished, dark-themed interfaces with pure CSS.' },
+            JS: { icon: '⚡', title: 'My JavaScript Work', desc: 'JavaScript is my core — I build interactive features, handle async operations, manipulate the DOM, and create visual effects. I work with ES6+, APIs, and vanilla JS for dynamic user experiences.', fact: 'JavaScript is the engine behind every interactive element I build.' },
+            Python: { icon: '🐍', title: 'My Python Work', desc: 'I use Python for scripting, data analysis, automation, and AI experiments. From web scraping to data processing and machine learning models, Python is my go-to for backend logic and intelligent tools.', fact: 'I use Python to explore data, automate tasks, and build AI experiments.' },
+            AI: { icon: '🤖', title: 'My AI Work', desc: 'I explore machine learning, neural networks, and natural language processing. I work with datasets, train models, and build intelligent tools that learn and adapt. AI is where I see the future of technology.', fact: 'I believe AI will transform every industry — and I\'m building skills to be part of that change.' },
+            Design: { icon: '✨', title: 'My Design Work', desc: 'I design modern, dark-themed interfaces with a focus on user experience, typography, and visual hierarchy. I create clean layouts, choose color palettes, and craft intuitive flows for web and mobile.', fact: 'I aim for clean, premium designs that feel as good as they look.' },
+            TypeScript: { icon: '🔷', title: 'My TypeScript Work', desc: 'I use TypeScript to write safer, more scalable JavaScript. Type definitions, interfaces, and generics help me build maintainable codebases that are easier to debug and refactor.', fact: 'TypeScript helps me catch errors early and write more reliable code.' },
+            Git: { icon: '🔀', title: 'My Git Work', desc: 'Git is how I manage every project — branching, merging, version control, and collaboration. I keep clean commit histories and work efficiently in team environments.', fact: 'I use Git for version control in every project, solo or collaborative.' }
+        };
+
+        function showPopup(tech, cx, cy, locked) {
+            closePopup();
+            popupLocked = locked;
+            const palette = badgeColors[tech] || badgeColors.HTML;
+            const info = techInfo[tech] || techInfo.HTML;
+            const popup = document.createElement('div');
+            popup.className = 'tech-popup';
+            popup.innerHTML = `
+                <div class="tp-icon">${info.icon}</div>
+                <div class="tp-body">
+                    <div class="tp-title">${info.title}</div>
+                    <div class="tp-desc">${info.desc}</div>
+                    <div class="tp-fact">${info.fact}</div>
+                </div>
+            `;
+            popup.style.setProperty('--accent', palette[0]);
+            const popX = cx < window.innerWidth / 2
+                ? Math.min(cx + 60, window.innerWidth - 260)
+                : Math.max(cx - 280, 10);
+            const popY = Math.max(cy - 100, 20);
+            popup.style.left = popX + 'px';
+            popup.style.top = popY + 'px';
+            document.body.appendChild(popup);
+            currentPopup = popup;
+            requestAnimationFrame(() => popup.classList.add('show'));
+            if (locked) {
+                popupTimeout = setTimeout(() => closePopup(), 12000);
+            }
+        }
+
+        document.addEventListener('mouseenter', function(e) {
+            const badge = e.target.closest('.float-badge');
+            if (!badge || popupLocked) return;
+            const tech = badge.textContent.trim();
+            const rect = badge.getBoundingClientRect();
+            showPopup(tech, rect.left + rect.width / 2, rect.top + rect.height / 2, false);
+        }, true);
+
+        document.addEventListener('mouseleave', function(e) {
+            if (e.target.closest('.float-badge') && !popupLocked) closePopup();
+        }, true);
+
+        document.addEventListener('click', function(e) {
+            const badge = e.target.closest('.float-badge');
+            if (!badge) { closePopup(); return; }
+            closePopup();
+
+            const tech = badge.textContent.trim();
+            const rect = badge.getBoundingClientRect();
+            const cx = rect.left + rect.width / 2;
+            const cy = rect.top + rect.height / 2;
+
+            const palette = badgeColors[tech] || badgeColors.HTML;
+            const sym = badgeSymbols[tech] || '•';
+            const count = tech === 'AI' ? 80 : 55;
+
+            showPopup(tech, cx, cy, true);
+
+            badge.style.transition = 'transform 0.2s, opacity 0.2s';
+            badge.style.transform = 'scale(1.8)';
+            badge.style.opacity = '0';
+            setTimeout(() => { badge.style.transform = ''; badge.style.opacity = '1'; setTimeout(() => { badge.style.transition = ''; }, 200); }, 300);
+
+            const parts = [];
+            for (let i = 0; i < count; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const spd = Math.random() * 160 + 40;
+                const sz = Math.random() * 8 + 2;
+                const isSym = Math.random() < 0.2;
+                const color = palette[Math.floor(Math.random() * palette.length)];
+                const el = document.createElement('div');
+                el.className = 'bp';
+                el.innerHTML = isSym ? sym : '';
+                Object.assign(el.style, {
+                    left: cx + 'px',
+                    top: cy + 'px',
+                    width: sz + 'px',
+                    height: sz + 'px',
+                    borderRadius: isSym ? '2px' : '50%',
+                    background: isSym ? 'none' : color,
+                    color: color,
+                    fontSize: (sz * 3) + 'px',
+                    lineHeight: sz + 'px',
+                    textAlign: 'center',
+                    textShadow: `0 0 10px ${color}`,
+                    boxShadow: isSym ? 'none' : `0 0 8px ${color}`,
+                    position: 'fixed',
+                    pointerEvents: 'none',
+                    zIndex: 9999,
+                    fontFamily: 'Poppins, sans-serif',
+                    fontWeight: 'bold',
+                    transform: 'translate(0,0)',
+                    willChange: 'transform, opacity'
+                });
+                document.body.appendChild(el);
+                parts.push({ el, x: cx, y: cy, vx: Math.cos(angle)*spd, vy: Math.sin(angle)*spd - 50, life: 1, decay: 0.012 + Math.random()*0.01, isAI: tech === 'AI', color });
+            }
+
+            if (tech === 'AI') {
+                const dots = parts.filter(p => !p.el.textContent);
+                for (let i = 0; i < dots.length && i < 15; i++) {
+                    for (let j = i+1; j < dots.length && j < 15; j++) {
+                        if (Math.random() > 0.15) continue;
+                        const dx = dots[j].x - dots[i].x;
+                        const dy = dots[j].y - dots[i].y;
+                        const dist = Math.sqrt(dx*dx + dy*dy);
+                        if (dist > 300) continue;
+                        const line = document.createElement('div');
+                        line.className = 'bp';
+                        const ang = Math.atan2(dy, dx) * (180/Math.PI);
+                        Object.assign(line.style, {
+                            position: 'fixed',
+                            left: dots[i].x + 'px',
+                            top: dots[i].y + 'px',
+                            width: dist + 'px',
+                            height: '1.5px',
+                            background: `linear-gradient(90deg, ${dots[i].color}, transparent)`,
+                            transformOrigin: 'left center',
+                            transform: `rotate(${ang}deg)`,
+                            opacity: '0.5',
+                            borderRadius: '0',
+                            boxShadow: `0 0 6px ${dots[i].color}`,
+                            pointerEvents: 'none',
+                            zIndex: '9998'
+                        });
+                        document.body.appendChild(line);
+                        parts.push({ el: line, life: 1, decay: 0.025 });
+                    }
+                }
+            }
+
+            let animId = null;
+            function tick() {
+                for (let i = parts.length - 1; i >= 0; i--) {
+                    const p = parts[i];
+                    if (p.vx !== undefined) {
+                        p.vy += 2.8;
+                        p.x += p.vx / 60;
+                        p.y += p.vy / 60;
+                        p.vx *= 0.97;
+                    }
+                    p.life -= p.decay;
+                    if (p.life <= 0) {
+                        p.el.remove();
+                        parts.splice(i, 1);
+                    } else {
+                        p.el.style.opacity = Math.max(p.life, 0);
+                        if (p.vx !== undefined) {
+                            let t = `translate(${p.x - parseFloat(p.el.style.left)}px, ${p.y - parseFloat(p.el.style.top)}px)`;
+                            if (p.isAI) t += ` scale(${1 + (1-p.life)*0.6})`;
+                            p.el.style.transform = t;
+                        }
+                    }
+                }
+                if (parts.length) animId = requestAnimationFrame(tick);
+                else animId = null;
+            }
+            tick();
+        });
+
+
+        // ─── Neural Network Background ───
+        (function() {
+            const canvas = document.getElementById('neuralBG');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let W, H, nodes = [], edges = [], mouse = { x: -1e4, y: -1e4 };
+
+            function resize() {
+                W = canvas.width = window.innerWidth;
+                H = canvas.height = window.innerHeight;
+            }
+
+            // Build 4 organic clusters
+            const clusters = [
+                { cx: 0.15, cy: 0.2, count: 7, radius: 80 },
+                { cx: 0.75, cy: 0.25, count: 6, radius: 70 },
+                { cx: 0.4, cy: 0.6, count: 8, radius: 90 },
+                { cx: 0.8, cy: 0.75, count: 5, radius: 60 }
+            ];
+
+            function init() {
+                nodes = []; edges = [];
+                clusters.forEach(c => {
+                    const cx = W * c.cx, cy = H * c.cy;
+                    for (let i = 0; i < c.count; i++) {
+                        const angle = Math.random() * Math.PI * 2;
+                        const dist = Math.random() * c.radius;
+                        nodes.push({
+                            x: cx + Math.cos(angle) * dist,
+                            y: cy + Math.sin(angle) * dist,
+                            bx: cx + Math.cos(angle) * dist,
+                            by: cy + Math.sin(angle) * dist,
+                            size: 1.5 + Math.random() * 3,
+                            opacity: 0.5 + Math.random() * 0.4,
+                            phase: Math.random() * Math.PI * 2,
+                            hue: Math.random() < 0.6 ? 220 : 260
+                        });
+                    }
+                });
+                // Intelligent connections: within clusters + bridging between nearby clusters
+                for (let i = 0; i < nodes.length; i++) {
+                    for (let j = i + 1; j < nodes.length; j++) {
+                        const dx = nodes[i].x - nodes[j].x;
+                        const dy = nodes[i].y - nodes[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        const maxDist = 180 + Math.random() * 60;
+                        if (dist < maxDist && Math.random() < 0.35) {
+                            edges.push({ i, j, dist });
+                        }
+                    }
+                }
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, W, H);
+                const time = Date.now() * 0.001;
+
+                // Edges
+                edges.forEach(e => {
+                    const a = nodes[e.i], b = nodes[e.j];
+                    const dx = a.x - b.x, dy = a.y - b.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    const maxDist = 240;
+                    if (dist > maxDist) return;
+                    const alpha = (1 - dist / maxDist) * 0.4;
+
+                    // Mouse glow boost
+                    const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+                    const dm = Math.hypot(mx - mouse.x, my - mouse.y);
+                    const glow = dm < 200 ? (1 - dm / 200) * 0.5 : 0;
+
+                    ctx.beginPath();
+                    ctx.moveTo(a.x, a.y);
+                    ctx.lineTo(b.x, b.y);
+                    ctx.strokeStyle = `rgba(130, 170, 255, ${Math.min(alpha + glow, 0.7)})`;
+                    ctx.lineWidth = 1 + glow * 2.5;
+                    ctx.stroke();
+                });
+
+                // Nodes
+                nodes.forEach(n => {
+                    // Gentle drift
+                    n.x += (n.bx - n.x) * 0.002;
+                    n.y += (n.by - n.y) * 0.002;
+
+                    const pulse = 0.85 + 0.15 * Math.sin(time * 1.2 + n.phase);
+                    const dm = Math.hypot(n.x - mouse.x, n.y - mouse.y);
+                    const near = dm < 200;
+                    const size = n.size * pulse * (near ? 1.8 : 1);
+                    const baseA = n.opacity * (near ? 1.5 : 1);
+                    const color = n.hue === 220 ? `rgba(91, 140, 255, ${baseA})` : `rgba(155, 90, 230, ${baseA})`;
+                    const glowColor = n.hue === 220 ? `rgba(91, 140, 255, ${baseA * 0.5})` : `rgba(155, 90, 230, ${baseA * 0.4})`;
+
+                    // Glow
+                    const grad = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, size * 4);
+                    grad.addColorStop(0, glowColor);
+                    grad.addColorStop(1, 'transparent');
+                    ctx.beginPath();
+                    ctx.arc(n.x, n.y, size * 4, 0, Math.PI * 2);
+                    ctx.fillStyle = grad;
+                    ctx.fill();
+
+                    // Core
+                    ctx.beginPath();
+                    ctx.arc(n.x, n.y, size, 0, Math.PI * 2);
+                    ctx.fillStyle = color;
+                    ctx.fill();
+
+                    // Inner highlight
+                    ctx.beginPath();
+                    ctx.arc(n.x, n.y, size * 0.35, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(255,255,255,0.25)';
+                    ctx.fill();
+                });
+
+                requestAnimationFrame(draw);
+            }
+
+            document.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+            document.addEventListener('mouseleave', () => { mouse.x = -1e4; mouse.y = -1e4; });
+            window.addEventListener('resize', () => { resize(); init(); });
+
+            resize();
+            init();
+            draw();
+        })();
     </script>
 
 </body>
